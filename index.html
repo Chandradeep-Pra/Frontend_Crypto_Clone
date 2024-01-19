@@ -4,18 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>coin-intention</title>
+    <!--Font Aweosme Link-->
+    <script src="https://kit.fontawesome.com/ab1e1932be.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
     <!--Header Section-->
     <header class="header">
         <div class="container">
             <a href="#" class="logo">
-                <img>
+                <i class="fa-brands fa-btc" style="color: #FFD43B;"></i>
                 COININTENTION
             </a>
+
+            <nav class="navbar">
+                <ul class="navItems">
+                    <li class="navItem">
+                        <a href="#" class="navLink">Cryptocurrencies</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#" class="navLink">Exchanges</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#" class="navLink">Community</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#" class="navLink">Trades</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="navButton">
+                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+            </button>
         </div>
     </header>
+
     <!--Trend Section-->
+    <main>
+        <section class="container">
+            <div class="heroHead">
+                <div class="heroContent">
+                    <h2 class="heroTitle">Today's Cryptocurrency Prices By Market Cap</h2>
+                    <p class="heroText">
+                        The global cryptocurrency market cap today is <span class="green">$811.7B a</span> <i class="fa-solid fa-arrow-down red"> 0.17%</i> decrease in the last 24 hours.
+                    </p>
+                </div>
+                <table class="cryptoChart">
+                    <thead class="tableHead">
+                        <tr class="tableRow tableTitle">
+                            <!-- <th class="tableHead" ></th> -->
+                            <th class="tableHead" scope="col">Name</th>
+                            <th class="tableHead" scope="col">Price</th>
+                            <th class="tableHead" scope="col">24h Change</th>
+                            <th class="tableHead" scope="col">Chart</th>
+                            <th class="tableHead" scope="col">Marketcap</th>
+                            <th class="tableHead"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="tableBody">
+                        <tr class="tableRow">
+                            <td class="tableData">
+                                <div class="wrapper">
+                                    <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=029" height="40px" width="40px">
+                                    <a href="#" class="cryptoName">Bitcoin<span class="span"> BTC</span></a>
+                                </div>
+                            </td>
+                            <td class="tableData price">$3625.24</td>
+                            <td class="tableData green priceChange">+2.4%</td>
+                            <td class="tableData">
+                                <i class="fa-solid fa-arrow-up green"></i>
+                            </td>
+                            <td class="tableData marketCap">$320,893,271,955</td>
+                        </tr>
+                        <tr class="tableRow">
+                            <td class="tableData">
+                                <div class="wrapper">
+                                    <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=029"  width="40px" height="40px">
+                                    <h3>
+                                        <a href="#" class="cryptoName">Ethereum<span class="span">ETH</span></a>
+                                    </h3>
+                                </div>
+                            </td>
+                            <td class="tableData price">$1218.18</td>
+                            <td class="tableData red priceChange">-0.7%</td>
+                            <td class="tableData">
+                                <i class="fa-solid fa-arrow-down red"></i>
+                            </td>
+                            <td class="tableData marketCap">$148,563,792,762</td>
+                        </tr>
+                        <tr class="tableRow">
+                            <td class="tableData">
+                                <div class="wrapper">
+                                    <img src="https://cryptologos.cc/logos/shiba-inu-shib-logo.png?v=029" alt="Bitcoin" class="img" width="40px" height="40px">
+                                    <h3>
+                                        <a href="#" class="cryptoName">ShibuInu<span class="span">Shibu</span></a>
+                                    </h3>
+                                </div>
+                            </td>
+                            <td class="tableData price">$0.001</td>
+                            <td class="tableData green priceUp">+1.2%</td>
+                            <td class="tableData">
+                                <i class="fa-solid fa-arrow-up green"></i>
+                            </td>
+                            <td class="tableData marketCap">$4,498,804,882</td>
+                        </tr>
+                        <tr class="tableRow">
+                            <td class="tableData">
+                                <div class="wrapper">
+                                    <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=029" height="40px" width="40px">
+                                    <h3>
+                                        <a href="#" class="cryptoName">Bitcoin<span class="span">BTC</span></a>
+                                    </h3>
+                                </div>
+                            </td>
+                            <td class="tableData price">$3625.24</td>
+                            <td class="tableData green priceChange">+2.4%</td>
+                            <td class="tableData">
+                                <i class="fa-solid fa-arrow-up green"></i>
+                            </td>
+                            <td class="tableData marketCap">$320,893,271,955</td>
+                        </tr>
+                        <tr class="tableRow">
+                            <td class="tableData">
+                                <div class="wrapper">
+                                    <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=029"  width="40px" height="40px">
+                                    <h3>
+                                        <a href="#" class="cryptoName">Ethereum<span class="span">ETH</span></a>
+                                    </h3>
+                                </div>
+                            </td>
+                            <td class="tableData price">$1218.18</td>
+                            <td class="tableData red priceChange">-0.7%</td>
+                            <td class="tableData">
+                                <i class="fa-solid fa-arrow-down red"></i>
+                            </td>
+                            <td class="tableData marketCap">$148,563,792,762</td>
+                        </tr>
+                        <tr class="tableRow">
+                            <td class="tableData">
+                                <div class="wrapper">
+                                    <img src="https://cryptologos.cc/logos/shiba-inu-shib-logo.png?v=029" alt="Bitcoin" class="img" width="40px" height="40px">
+                                    <h3>
+                                        <a href="#" class="cryptoName">ShibuInu<span class="span">Shibu</span></a>
+                                    </h3>
+                                </div>
+                            </td>
+                            <td class="tableData price">$0.001</td>
+                            <td class="tableData green priceUp">+1.2%</td>
+                            <td class="tableData">
+                                <i class="fa-solid fa-arrow-up green"></i>
+                            </td>
+                            <td class="tableData marketCap">$4,498,804,882</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button>View All</button>
+            </div>
+        </section>
+    </main>
     <!--Content-Platform Section-->
     <!--Content Cryptos Section-->
     <!--Footer Section-->
